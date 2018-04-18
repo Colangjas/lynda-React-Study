@@ -1,0 +1,10 @@
+Homestead.yaml
+composer.json
+composer.lock
+Vagrantfile
+after.sh
+package.json
+2018-04-18-02-48-48.012-VBoxSVC-14257.log
+
+/vendor
+/node_modules
