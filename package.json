@@ -1,0 +1,30 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "React Study",
+  "main": "index.js",
+  "scripts": {
+    "b": "babel ./js/index.js --out-file ./public/bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Colangjas/lynda-React-Study.git"
+  },
+  "keywords": [
+    "react",
+    "lynda"
+  ],
+  "author": "Colin Thompson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Colangjas/lynda-React-Study/issues"
+  },
+  "homepage": "https://github.com/Colangjas/lynda-React-Study#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1"
+  },
+  "dependencies": {}
+}
