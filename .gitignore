@@ -4,6 +4,9 @@ composer.lock
 Vagrantfile
 after.sh
 2018-04-18-02-48-48.012-VBoxSVC-14257.log
+.vagrant
+.vscode
+package-lock.json
 
 /vendor
 /node_modules
