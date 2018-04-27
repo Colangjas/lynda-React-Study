@@ -8,6 +8,12 @@ module.exports = {
         filename: "bundle.js",
         publicPath: "assets"
     },
+    devServer: {
+        contentBase: path.join(__dirname, "public"),
+        compress: true,
+        port: 3333,
+        historyApiFallback: true
+    },
     module: {
         rules: [
             {

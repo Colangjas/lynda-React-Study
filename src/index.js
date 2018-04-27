@@ -1,8 +1,9 @@
 import React from 'react'
 import { render } from 'react-dom'
 import { hello, goodbye } from './lib';
-import { BikeDayCount } from './components/BikeDayCount'
-import { BikeDayList } from './components/bikedaylist'
+// import { BikeDayCount } from './components/BikeDayCount'
+// import { BikeDayList } from './components/bikedaylist'
+import Nav from './components/nav'
 
 window.React = React
 
@@ -23,7 +24,7 @@ window.React = React
         'Hello World'
     )
     */
-    
+
 /*
 render(
   
@@ -76,14 +77,16 @@ render(
 
 
 
-render (
-    <BikeDayList days={
-            [
-                {
-                    resort: "Squaw Valley",
-                    date: new Date("1/2/2019"),
-                    sun: true,
-                    wind: false,
+/**
+ * Commented out for React Router
+ render (
+     <BikeDayList days={
+         [
+             {
+                 resort: "Squaw Valley",
+                 date: new Date("1/2/2019"),
+                 sun: true,
+                 wind: false,
                 },
                 {
                     resort: "Kirkwood",
@@ -101,8 +104,25 @@ render (
         } />,
     document.getElementById('app')
 )
+              */
 
-/**
- * 
- * 
- */
+
+
+// render(
+//     <div>
+//         <Router>
+//             <Switch>
+//                 <Route exact path="/" component={App} />
+//                 <Route path="/woops" component={Woops404} />
+//                 <Route path="*" component={Woops404} />
+//             </Switch>
+//         </Router>
+//     </div>,
+//     document.getElementById('app')
+// )
+
+render(
+    <Nav />,
+    document.getElementById('app')
+)
+

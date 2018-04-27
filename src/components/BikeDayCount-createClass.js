@@ -1,5 +1,4 @@
 import createClass from 'create-react-class'
-import PropTypes from 'prop-types'
 import '../css/ui.scss'
 import Bicycle from 'react-icons/lib/fa/bicycle'
 import Sun from 'react-icons/lib/fa/sun-o'
@@ -7,11 +6,6 @@ import Leaf from 'react-icons/lib/fa/envira'
 import StarWars from 'react-icons/lib/fa/ra'
 
 export const BikeDayCount = createClass({
-  propTypes:{
-    total: PropTypes.number,
-    sun: PropTypes.number,
-    wind: PropTypes.number,
-  },
   percentToDecimal(decimal) {
     return ((decimal * 100) + '%')
   },
