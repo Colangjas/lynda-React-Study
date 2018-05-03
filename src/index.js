@@ -7,6 +7,11 @@ import Nav from './components/nav'
 
 window.React = React
 
+render(
+    <Nav />,
+    document.getElementById('app')
+)
+
 //const { createElement } = React // removed for JSX
 // const { render } = ReactDOM
 
@@ -120,9 +125,3 @@ render(
 //     </div>,
 //     document.getElementById('app')
 // )
-
-render(
-    <Nav />,
-    document.getElementById('app')
-)
-

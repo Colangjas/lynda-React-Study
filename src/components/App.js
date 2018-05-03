@@ -2,6 +2,7 @@ import { Component } from 'react'
 import { BikeDayCount } from './BikeDayCount'
 import { BikeDayList } from './bikedaylist'
 import { Woops404 } from './woops404'
+import { AddDayForm } from './AddDayForm'
 
 export class App extends Component {
     constructor(props) {
@@ -31,15 +32,23 @@ export class App extends Component {
     }
     countDays(filter) {
         const { allBikeDays } = this.state
+        const dayFilter = filter
         return allBikeDays.filter((day) => (filter) ? day[filter] : day).length
     }
     render() {
         return (
             <div className="app">
-                <BikeDayList days={this.state.allBikeDays} />
+                {(this.props.location.pathname === "/") ?
+                
                 <BikeDayCount total={this.countDays()}
                     sun={this.countDays("sun")}
                     wind={this.countDays("wind")} />
+                : (this.props.location.pathname === "/add-day") ?
+                <AddDayForm />
+                : 
+                <BikeDayList days={this.state.allBikeDays}
+                    filter={this.props.location.pathname.split("/").slice(-1)[0]} />
+                }
             </div>
         )
     }
